@@ -13,7 +13,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 AOS.init();
-
+// 
 export const AppContext = createContext(null);
 function App() {
   const [mode, setMode] = useState("light");

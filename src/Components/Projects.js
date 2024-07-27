@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { AppContext } from "../App";
+import imdb_clone from "../assets/imdb_pic.png";
 
 const Projects = () => {
   const { mode, textMode } = useContext(AppContext);
@@ -13,6 +14,96 @@ const Projects = () => {
         Projects
       </div>
       <div className="row justify-content-center" style={{ height: "100%" }}>
+        <div className="col-md-4" data-aos="fade-up" data-aos-duration="500">
+          <div class={"card bg-" + mode}>
+            <div className="card-img">
+              <LazyLoadImage
+                effect="blur"
+                src={imdb_clone}
+                class="card-img-top"
+                alt="brewery"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class={"card-title text-" + textMode}>IMDB Clone</h2>
+              <p class={"card-text text-" + textMode}>
+                You can get information about the movie from this IMDB clone
+                application
+              </p>
+              <div className="btn-row ">
+                <a
+                  href="https://imdb-clone-frontend-abdulwasim-s.vercel.app/"
+                  class="btn btn-success mb-3"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit
+                </a>
+                <a
+                  href="https://github.com/Abdulwasim-S/imdb-clone-frontend"
+                  class="btn btn-success mb-3"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code FE
+                </a>
+                <a
+                  href="https://github.com/Abdulwasim-S/IMDB-Backend"
+                  class="btn btn-success mb-3"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code BE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4" data-aos="fade-up" data-aos-duration="500">
+          <div class={"card bg-" + mode}>
+            <div className="card-img">
+              <LazyLoadImage
+                effect="blur"
+                src="https://drive.google.com/thumbnail?export=view&id=14iiABFw0pOegc_uYAHoq2OjywUfHPIIf&sz=w10000"
+                class="card-img-top"
+                alt="renten"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class={"card-title text-" + textMode}>Product Rental App</h2>
+              <p class={"card-text text-" + textMode}>
+                The rental product application enables seamless product rentals
+                with a user-friendly interface.
+              </p>
+              <div className="btn-row ">
+                <a
+                  href="https://guvi-hackthon2-frontend-abdulwasim-s.vercel.app/"
+                  class="btn btn-success mb-3"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit
+                </a>
+                <a
+                  href="https://github.com/Abdulwasim-S/guvi-hackthon2-frontend"
+                  class="btn btn-success mb-3"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code FE
+                </a>
+                <a
+                  href="https://github.com/Abdulwasim-S/password-reset-backend"
+                  class="btn btn-success mb-3"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source Code BE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="col-md-4 " data-aos="fade-up" data-aos-duration="500">
           <div class={"card bg-" + mode}>
             <div className="card-img">
@@ -102,95 +193,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-4" data-aos="fade-up" data-aos-duration="500">
-          <div class={"card bg-" + mode}>
-            <div className="card-img">
-              <LazyLoadImage
-                effect="blur"
-                src="https://drive.google.com/thumbnail?export=view&id=14iiABFw0pOegc_uYAHoq2OjywUfHPIIf&sz=w10000"
-                class="card-img-top"
-                alt="renten"
-              />
-            </div>
-            <div class="card-body">
-              <h2 class={"card-title text-" + textMode}>Product Rental App</h2>
-              <p class={"card-text text-" + textMode}>
-                Rental product application model for buying products for rent.
-              </p>
-              <div className="btn-row ">
-                <a
-                  href="https://guvi-hackthon2-frontend-abdulwasim-s.vercel.app/"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit
-                </a>
-                <a
-                  href="https://github.com/Abdulwasim-S/guvi-hackthon2-frontend"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code FE
-                </a>
-                <a
-                  href="https://github.com/Abdulwasim-S/password-reset-backend"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code BE
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4" data-aos="fade-up" data-aos-duration="500">
-          <div class={"card bg-" + mode}>
-            <div className="card-img">
-              <LazyLoadImage
-                effect="blur"
-                src="https://drive.google.com/thumbnail?export=view&id=1JPPRawj1Lm3i59vEFpNUid1CrvkAqwQC&sz=w10000"
-                class="card-img-top"
-                alt="brewery"
-              />
-            </div>
-            <div class="card-body">
-              <h2 class={"card-title text-" + textMode}>Brewery App</h2>
-              <p class={"card-text text-" + textMode}>
-                You can find the brewery shop address and contact using this
-                application.
-              </p>
-              <div className="btn-row ">
-                <a
-                  href="https://creative-taiyaki-1dec5a.netlify.app/"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit
-                </a>
-                <a
-                  href="https://github.com/Abdulwasim-S/Breweries"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code FE
-                </a>
-                <a
-                  href="..."
-                  class="btn btn-success mb-3 disabled"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code BE
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div className="col-md-4 " data-aos="fade-up" data-aos-duration="500">
           <div class={"card bg-" + mode}>
             <div className={"card-text text-" + textMode}>

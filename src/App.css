@@ -1,9 +1,10 @@
 .banner-page{
-    background-image: url("https://i.pinimg.com/originals/4c/44/39/4c443992f6106654fc270b3ca708d29e.png");
+    background-image: url("/public/banner-bg.jpg");
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-position: center;
-    background-position-x: right;
+    /* background-position-x: right; */
+    background-size: cover;
 }
 .profile{
     height:60vh;
@@ -45,6 +46,35 @@
     overflow: hidden;
     margin: 7% 7% 0 7%;
   }
+    .about-container {
+      /* max-width: 80%; */
+      text-align: justify;
+      margin: 0 auto;
+      padding: 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+    }
+  
+    .about-container h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .about-container h3 {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+  
+    .about-container ul {
+      margin-left: 1.5rem;
+      list-style: disc;
+    }
+  
+    .about-container ul li {
+      margin-bottom: 0.5rem;
+    }
+  
   @keyframes slider {
     from{
       transform: translateX(0);
@@ -78,7 +108,7 @@
   }
 @media only screen and (max-width:900px) {
     .banner-page{
-        background-image: url("https://www.topsinfosolutions.com/wp-content/uploads/2019/01/react-js-web-bg.jpg");
+        background-image: url("/public/banner-bg1.jpg");
         width: 100%;
         height: 35vh;
         background-position: center;

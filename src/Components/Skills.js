@@ -48,11 +48,11 @@ const Skills = () => {
             alt="git-img"
             className="logo-img p-3"
           />
-          {/* <img
-            src="https://seeklogo.com/images/A/ant-design-logo-EAB6B3D5D9-seeklogo.com.png"
+          <img
+            src="https://img.icons8.com/?size=512&id=90519&format=png"
             alt="antd-img"
             className="logo-img p-3"
-          /> */}
+          />
           <img
             src="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png"
             alt="nodejs-img"
@@ -115,11 +115,11 @@ const Skills = () => {
             alt="git-img"
             className="logo-img p-3"
           />
-          {/* <img
-            src="https://seeklogo.com/images/A/ant-design-logo-EAB6B3D5D9-seeklogo.com.png"
+          <img
+            src="https://img.icons8.com/?size=512&id=90519&format=png"
             alt="antd-img"
             className="logo-img p-3"
-          /> */}
+          />
           <img
             src="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png"
             alt="nodejs-img"

@@ -39,7 +39,7 @@ const Skills = () => {
             className="logo-img p-2"
           />
           <img
-            src="https://static-00.iconduck.com/assets.00/docker-icon-512x438-ga1hb37h.png"
+            src="/assets/docker-logo.png"
             alt="docker-img"
             className="logo-img p-3"
           />
@@ -50,7 +50,7 @@ const Skills = () => {
           />
           <img
             src="https://img.icons8.com/?size=512&id=90519&format=png"
-            alt="antd-img"
+            alt="spring-boot-img"
             className="logo-img p-3"
           />
           <img
@@ -106,7 +106,7 @@ const Skills = () => {
             className="logo-img p-2"
           />
           <img
-            src="https://static-00.iconduck.com/assets.00/docker-icon-512x438-ga1hb37h.png"
+            src="/assets/docker-logo.png"
             alt="docker-img"
             className="logo-img p-3"
           />
@@ -117,7 +117,7 @@ const Skills = () => {
           />
           <img
             src="https://img.icons8.com/?size=512&id=90519&format=png"
-            alt="antd-img"
+            alt="spring-boot-img"
             className="logo-img p-3"
           />
           <img

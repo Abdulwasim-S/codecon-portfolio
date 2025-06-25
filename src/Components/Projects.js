@@ -2,9 +2,76 @@ import React, { useContext } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { AppContext } from "../App";
 import imdb_clone from "../assets/imdb_pic.png";
+import shadow_events from "../assets/shadowevtns_pic.png";
 
 const Projects = () => {
   const { mode, textMode } = useContext(AppContext);
+
+  const cardClass = `card bg-${mode}`;
+  const textClass = `text-${textMode}`;
+  const btnClass = "btn btn-success mb-3";
+
+  const projects = [
+    {
+      title: "Shadow Events",
+      image: shadow_events,
+      description:
+        "Seamless event booking with Razorpay integration, powered by Spring Boot. Just create an account to begin.",
+      visit: "https://shadowevents.netlify.app/",
+      fe: "https://github.com/Abdulwasim-S/event-management-system-client",
+      be: "https://github.com/Abdulwasim-S/event-management-system",
+    },
+    {
+      title: "ShopZone App",
+      image:
+        "https://drive.google.com/thumbnail?export=view&id=1bJFa9i7wgWIOObpZLWwQUHaahp7-wEw9&sz=w10000",
+      description:
+        "E-commerce platform with Razorpay integration. Users can sign up and start shopping instantly.",
+      visit: "https://shopzone-fe.vercel.app/",
+      fe: "https://github.com/Abdulwasim-S/shopzone-fe",
+      be: "https://github.com/Abdulwasim-S/shopzone",
+    },
+    {
+      title: "IMDB Clone",
+      image: imdb_clone,
+      description:
+        "A clone of the IMDB platform where users can browse movie details and ratings.",
+      visit: "https://imdb-clone-frontend-abdulwasim-s.vercel.app/",
+      fe: "https://github.com/Abdulwasim-S/imdb-clone-frontend",
+      be: "https://github.com/Abdulwasim-S/IMDB-Backend",
+    },
+    {
+      title: "Product Rental App",
+      image:
+        "https://drive.google.com/thumbnail?export=view&id=14iiABFw0pOegc_uYAHoq2OjywUfHPIIf&sz=w10000",
+      description:
+        "A user-friendly platform for renting products with seamless UI and feature-rich backend.",
+      visit: "https://guvi-hackthon2-frontend-abdulwasim-s.vercel.app/",
+      fe: "https://github.com/Abdulwasim-S/guvi-hackthon2-frontend",
+      be: "https://github.com/Abdulwasim-S/password-reset-backend",
+    },
+    {
+      title: "Job Searching App",
+      image:
+        "https://drive.google.com/thumbnail?export=view&id=1LXqQVey9gxB0esy2rQkTNVHXmtlVcq0y&sz=w10000",
+      description:
+        "Hire or get hired with this platform. Quick login and free access to job opportunities.",
+      visit: "https://chance-murex.vercel.app/",
+      fe: "https://github.com/Abdulwasim-S/chance",
+      be: "https://github.com/Abdulwasim-S/chance-backend",
+    },
+    // {
+    //   title: "URL Shortener App",
+    //   image:
+    //     "https://drive.google.com/thumbnail?export=view&id=1v9IyfHO0QTrNOpMyQ30T4frdExTTXewo&sz=w10000",
+    //   description:
+    //     "Shorten long URLs with ease. Create an account to manage your custom links securely.",
+    //   visit: "https://url-shortener-eight-sigma.vercel.app/",
+    //   fe: "https://github.com/Abdulwasim-S/url-shortener",
+    //   be: "https://github.com/Abdulwasim-S/short-url-backend",
+    // },
+  ];
+
   return (
     <div className="container-fluid p-5">
       <div
@@ -14,134 +81,47 @@ const Projects = () => {
         Projects
       </div>
       <div className="row justify-content-center" style={{ height: "100%" }}>
-        <div className="row justify-content-center" style={{ height: "100%" }}>
-          <div className="col-md-4 " data-aos="fade-up" data-aos-duration="500">
-            <div class={"card bg-" + mode}>
-              <div className={"card-text text-" + textMode}>
-                <LazyLoadImage
-                  effect="blur"
-                  src="/assets/shadowevtns_pic.png"
-                  class="card-img-top"
-                  alt="urlshort"
-                />
-              </div>
-              <div class="card-body">
-                <h2 class={"card-title text-" + textMode}>Shadow Events </h2>
-                <p class={"card-text text-" + textMode}>
-                  Seamless event booking with Razorpay integration, powered by
-                  Spring Boot. Just create an account to begin.
-                </p>
-                <div className="btn-row ">
-                  <a
-                    href="https://shadowevents.netlify.app/"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Visit
-                  </a>
-                  <a
-                    href="https://github.com/Abdulwasim-S/event-management-system-client"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Source Code FE
-                  </a>
-                  <a
-                    href="https://github.com/Abdulwasim-S/event-management-system"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Source Code BE
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 " data-aos="fade-up" data-aos-duration="500">
-            <div class={"card bg-" + mode}>
-              <div className={"card-text text-" + textMode}>
-                <LazyLoadImage
-                  effect="blur"
-                  src="https://drive.google.com/thumbnail?export=view&id=1bJFa9i7wgWIOObpZLWwQUHaahp7-wEw9&sz=w10000"
-                  class="card-img-top"
-                  alt="urlshort"
-                />
-              </div>
-              <div class="card-body">
-                <h2 class={"card-title text-" + textMode}>ShopZone App</h2>
-                <p class={"card-text text-" + textMode}>
-                  Product purchasing page with Razorpay integration. You just
-                  need to create an account to start using it.
-                </p>
-                <div className="btn-row ">
-                  <a
-                    href="https://shopzone-fe.vercel.app/"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Visit
-                  </a>
-                  <a
-                    href="https://github.com/Abdulwasim-S/shopzone-fe"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Source Code FE
-                  </a>
-                  <a
-                    href="https://github.com/Abdulwasim-S/shopzone"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Source Code BE
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4" data-aos="fade-up" data-aos-duration="500">
-            <div class={"card bg-" + mode}>
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="col-md-4 mb-4"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div className={cardClass}>
               <div className="card-img">
                 <LazyLoadImage
                   effect="blur"
-                  src={imdb_clone}
-                  class="card-img-top"
-                  alt="brewery"
+                  src={project.image}
+                  className="card-img-top"
+                  alt={project.title}
                 />
               </div>
-              <div class="card-body">
-                <h2 class={"card-title text-" + textMode}>IMDB Clone</h2>
-                <p class={"card-text text-" + textMode}>
-                  You can get information about the movie from this IMDB clone
-                  application
+              <div className="card-body">
+                <h2 className={`card-title ${textClass}`}>{project.title}</h2>
+                <p className={`card-text ${textClass}`}>
+                  {project.description}
                 </p>
-                <div className="btn-row ">
+                <div className="btn-row">
                   <a
-                    href="https://imdb-clone-frontend-abdulwasim-s.vercel.app/"
-                    class="btn btn-success mb-3"
+                    href={project.visit}
+                    className={btnClass}
                     target="_blank"
                     rel="noreferrer"
                   >
                     Visit
                   </a>
                   <a
-                    href="https://github.com/Abdulwasim-S/imdb-clone-frontend"
-                    class="btn btn-success mb-3"
+                    href={project.fe}
+                    className={btnClass}
                     target="_blank"
                     rel="noreferrer"
                   >
                     Source Code FE
                   </a>
                   <a
-                    href="https://github.com/Abdulwasim-S/IMDB-Backend"
-                    class="btn btn-success mb-3"
+                    href={project.be}
+                    className={btnClass}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -151,188 +131,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4" data-aos="fade-up" data-aos-duration="500">
-            <div class={"card bg-" + mode}>
-              <div className="card-img">
-                <LazyLoadImage
-                  effect="blur"
-                  src="https://drive.google.com/thumbnail?export=view&id=14iiABFw0pOegc_uYAHoq2OjywUfHPIIf&sz=w10000"
-                  class="card-img-top"
-                  alt="renten"
-                />
-              </div>
-              <div class="card-body">
-                <h2 class={"card-title text-" + textMode}>
-                  Product Rental App
-                </h2>
-                <p class={"card-text text-" + textMode}>
-                  The rental product application enables seamless product
-                  rentals with a user-friendly interface.
-                </p>
-                <div className="btn-row ">
-                  <a
-                    href="https://guvi-hackthon2-frontend-abdulwasim-s.vercel.app/"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Visit
-                  </a>
-                  <a
-                    href="https://github.com/Abdulwasim-S/guvi-hackthon2-frontend"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Source Code FE
-                  </a>
-                  <a
-                    href="https://github.com/Abdulwasim-S/password-reset-backend"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Source Code BE
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* <div className="col-md-4 " data-aos="fade-up" data-aos-duration="500">
-          <div class={"card bg-" + mode}>
-            <div className="card-img">
-              <LazyLoadImage
-                effect="blur"
-                src="https://drive.google.com/thumbnail?export=view&id=1hjUVjf3T4Ut66E6X-eFYpLTrwYufrnHl&sz=w10000"
-                class="card-img-top"
-                alt="urlshort"
-              />
-            </div>
-            <div class="card-body">
-              <h2 class={"card-title text-" + textMode}>React Markdown App</h2>
-              <p class={"card-text text-" + textMode}>
-                You can view and save React Markdown in this page.
-              </p>
-              <div className="btn-row ">
-                <a
-                  href="https://capstone-frontend-abdulwasim-s.vercel.app/"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit
-                </a>
-                <a
-                  href="https://github.com/Abdulwasim-S/capstone-frontend-abdulwasim-s"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code FE
-                </a>
-                <a
-                  href="https://github.com/Abdulwasim-S/capstone-backend-abdulwasim-s"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code BE
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> */}
-          <div className="col-md-4 " data-aos="fade-up" data-aos-duration="500">
-            <div class={"card bg-" + mode}>
-              <div className="card-img">
-                <LazyLoadImage
-                  effect="blur"
-                  src="https://drive.google.com/thumbnail?export=view&id=1LXqQVey9gxB0esy2rQkTNVHXmtlVcq0y&sz=w10000"
-                  class="card-img-top"
-                  alt="urlshort"
-                />
-              </div>
-              <div class="card-body">
-                <h2 class={"card-title text-" + textMode}>Job Searching App</h2>
-                <p class={"card-text text-" + textMode}>
-                  You can hire and get hired by this page for free. You just
-                  have to login in it.
-                </p>
-                <div className="btn-row ">
-                  <a
-                    href="https://chance-murex.vercel.app/"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Visit
-                  </a>
-                  <a
-                    href="https://github.com/Abdulwasim-S/chance"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Source Code FE
-                  </a>
-                  <a
-                    href="https://github.com/Abdulwasim-S/chance-backend"
-                    class="btn btn-success mb-3"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Source Code BE
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* <div className="col-md-4 " data-aos="fade-up" data-aos-duration="500">
-          <div class={"card bg-" + mode}>
-            <div className={"card-text text-" + textMode}>
-              <LazyLoadImage
-                effect="blur"
-                src="https://drive.google.com/thumbnail?export=view&id=1v9IyfHO0QTrNOpMyQ30T4frdExTTXewo&sz=w10000"
-                class="card-img-top"
-                alt="urlshort"
-              />
-            </div>
-            <div class="card-body">
-              <h2 class={"card-title text-" + textMode}>URL Shortener App</h2>
-              <p class={"card-text text-" + textMode}>
-                You can shorten long url in this page for free. You just have to
-                create a account in it.
-              </p>
-              <div className="btn-row ">
-                <a
-                  href="https://url-shortener-eight-sigma.vercel.app/"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit
-                </a>
-                <a
-                  href="https://github.com/Abdulwasim-S/url-shortener"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code FE
-                </a>
-                <a
-                  href="https://github.com/Abdulwasim-S/short-url-backend"
-                  class="btn btn-success mb-3"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code BE
-                </a>
-              </div>
-            </div>
-          </div>*/}
-        </div>
+        ))}
       </div>
     </div>
   );

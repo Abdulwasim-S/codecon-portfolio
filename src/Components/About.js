@@ -104,11 +104,11 @@ const About = () => {
         </li>
         <li>
           <strong>DevOps & Tools:</strong> Docker, Git, GitHub, GitLab CI/CD,
-          Nginx, Webhooks, Postman, VS Code, STS (Spring Tool Suite)
+          Nginx, Webhooks, Postman, Swagger, VS Code, STS (Spring Tool Suite)
         </li>
         <li>
-          <strong>Others:</strong> RESTful API development, Authentication, MVC
-          architecture, Agile workflow
+          <strong>Others:</strong> RESTful API development, Authentication,
+          Microservice architecture, Agile workflow
         </li>
       </ul>
 
@@ -119,15 +119,7 @@ const About = () => {
       </p>
 
       <p>Let’s build something great together!</p>
-      <a
-        className="text-decoration-none"
-        href="https://drive.google.com/file/d/1KfLH1607ENEsr7yf2GuPikv2KcLnLwEX/view?usp=sharing"
-        rel="noreferrer"
-        target="_blank"
-      >
-        Click here for my resume
-      </a>
-      <br />
+
       <a
         className="text-decoration-none"
         href="https://drive.google.com/file/d/1_T_wWvgYrPRNISI0afNA74G9f9ebCRc5/view?usp=sharing"
